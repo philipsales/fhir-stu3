@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="4944da24-e995-4317-96d2-4db845db8c40" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2018-06-23T12:24:09.92+00:00" />
+  </meta>
+  <url value="http://awh.fhir.ph/fhir/StructureDefinition/awh-organization-stu3" />
+  <version value="0.0.1" />
+  <name value="OrganizationAWH" />
+  <title value="Organization AWH" />
+  <status value="draft" />
+  <date value="2018-06-23T12:36:05.895Z" />
+  <publisher value="Allied World Healthcare: Innovation Labs" />
+  <description value="Organization for foundations and partner agencies of Allied World" />
+  <purpose value="AWH Organization profile" />
+  <copyright value="Creative Commons &quot;No Rights Reserved&quot;" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.implicitRules">
+      <path value="Organization.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contained">
+      <path value="Organization.contained" />
+      <max value="0" />
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
