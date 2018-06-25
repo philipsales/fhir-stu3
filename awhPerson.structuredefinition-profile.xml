@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="7f2f9f85-af5d-43f8-b431-e34246ee2179" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2018-06-23T12:25:36.349+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2018-06-24T12:32:43.633+00:00" />
   </meta>
   <url value="http://awh.hl7.ph/fhir/StructureDefinition/awh-person-stu3" />
   <version value="0.0.2" />
   <name value="PersonAWH" />
   <title value="Person AWH" />
   <status value="draft" />
-  <date value="2018-06-23T12:37:33.223Z" />
+  <date value="2018-06-24T12:44:43.479Z" />
   <publisher value="Allied World Healthcare: Innovation Labs" />
   <description value="Person Profile for Allied World Healthcare" />
   <purpose value="AWH Person Profile" />
@@ -25,6 +25,43 @@
     <element id="Person.implicitRules">
       <path value="Person.implicitRules" />
       <max value="0" />
+    </element>
+    <element id="Person.identifier">
+      <path value="Person.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <discriminator>
+          <type value="exists" />
+          <path value="value" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Person.identifier:UMID">
+      <path value="Person.identifier" />
+      <sliceName value="UMID" />
+      <alias value="BSN" />
+      <max value="1" />
+    </element>
+    <element id="Person.identifier:UMID.system">
+      <path value="Person.identifier.system" />
+      <fixedUri value="http://awh.fhir.ph/fhir/NamingSystem/umid" />
+      <example>
+        <label value="UMID number" />
+        <valueUri value="123456" />
+      </example>
+    </element>
+    <element id="Person.identifier:UMID.value">
+      <path value="Person.identifier.value" />
+      <min value="1" />
+      <example>
+        <label value="UMID number" />
+        <valueString value="123456" />
+      </example>
+      <maxLength value="6" />
     </element>
     <element id="Person.link">
       <path value="Person.link" />

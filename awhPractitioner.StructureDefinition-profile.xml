@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="854e8596-3ebf-4356-9b93-ff4721c53dd5" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2018-06-24T13:12:22.953+00:00" />
+  </meta>
+  <url value="http://example.org/fhir/StructureDefinition/PractitionerAWH" />
+  <name value="PractitionerAWH" />
+  <status value="draft" />
+  <date value="2018-06-24T13:24:21.711Z" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="openAtEnd" />
+      </slicing>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension" />
+      </type>
+    </element>
+    <element id="Practitioner.identifier:sliceIdentifier">
+      <path value="Practitioner.identifier" />
+      <sliceName value="sliceIdentifier" />
+    </element>
+  </differential>
+</StructureDefinition>
