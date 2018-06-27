@@ -1,0 +1,74 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "Color Code System",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "https://example.org/fhir/Codesystem/awh-colorcode-stu3",
+  "version": "0.0.1",
+  "status": "active",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://alliedworld.healthcare"
+        }
+      ],
+      "name": "AWH Ventures: Health Innovation Labs"
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "jim@alliedworld.healthcare"
+        }
+      ],
+      "name": "Jim Poole"
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "jim@alliedworld.healthcare"
+        }
+      ],
+      "name": "Philip Sales"
+    }
+  ],
+  "description": "Color Coding Sysytem for Philippines",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Blue",
+      "definition": "Blue COlor"
+    },
+    {
+      "code": "02",
+      "display": "Green",
+      "definition": "Green Color"
+    }
+  ],
+  "count": 3,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Color Code System</h2><tt>https://example.org/fhir/Codesystem/awh-colorcode-stu3</tt><p>Color Coding Sysytem for Philippines</p></div>"
+  },
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "hierarchyMeaning": "grouped-by",
+  "valueSet": "https://example.org/fhir/Codesystem/awh-colorcode-stu3",
+  "date": "2018-06-25",
+  "publisher": "Allied World Healthcare Venturs: Innovation Labs",
+  "copyright": "Creative Commons, no rights reserved",
+  "identifier": {
+    "value": "2.16.840.1.113883.2.4.3.11.60.40.2.7.9.3",
+    "system": "http://hl7.org/fhir/metric-color"
+  },
+  "experimental": true,
+  "id": "2.16.840.1.113883.2.4.3.11.60.40.2.7.9.3"
+}

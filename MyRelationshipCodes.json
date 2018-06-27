@@ -1,0 +1,130 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "url": "https://example.org/fhir/ValueSet/MyRelationshipCodes",
+  "identifier": [
+    {
+      "value": "2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1",
+      "system": "http://art-decor.org/ns/oids/v"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "MyRelationshipCodes",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "philip@alliedworld.healthcare"
+        }
+      ],
+      "name": "Phililp Sales"
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "jim@alliedworld.heatlhcare"
+        }
+      ],
+      "name": "Jim Poole"
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://awh.fhir.ph"
+        }
+      ],
+      "name": "AWH Ventures"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "D",
+            "display": "Diborxo"
+          },
+          {
+            "code": "Kb",
+            "display": "Maraming Kabit"
+          }
+        ],
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "version": "2016-11-11"
+      }
+    ],
+    "exclude": [
+      {
+        "concept": [
+          {
+            "code": "P",
+            "display": "Polygamous"
+          },
+          {
+            "code": "code",
+            "display": "display"
+          },
+          {
+            "code": "A",
+            "display": "Annulled"
+          },
+          {
+            "code": "D",
+            "display": "Divorced"
+          },
+          {
+            "code": "I",
+            "display": "Interlocutory"
+          },
+          {
+            "code": "L",
+            "display": "Legally Separated"
+          },
+          {
+            "code": "M",
+            "display": "Married"
+          },
+          {
+            "code": "P",
+            "display": "Polygamous"
+          },
+          {
+            "code": "S",
+            "display": "Never Married"
+          },
+          {
+            "code": "T",
+            "display": "Domestic partner"
+          },
+          {
+            "code": "U",
+            "display": "unmarried"
+          },
+          {
+            "code": "W",
+            "display": "Widowed"
+          }
+        ],
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "version": "2016-11-11"
+      }
+    ]
+  },
+  "description": "Relationship Status for Philippines",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MyRelationshipCodes</h2><tt>https://example.org/fhir/ValueSet/MyRelationshipCodes</tt><p>Relationship Status for Philippines</p></div>"
+  },
+  "publisher": "Allied World Healthcare: Innovation Labs",
+  "date": "2018-06-26",
+  "copyright": "Creative Commons, no rights reserved",
+  "experimental": true
+}

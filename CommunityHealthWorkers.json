@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "url": "https://example.org/fhir/ValueSet/awh-healthworker-stu3",
+  "identifier": [
+    {
+      "value": "2.16.840.1.113883.2.4.3.11.60.40.2.7.9.9",
+      "system": "http://snomed.info/sct/32506021000036107/version/20160630"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "CommunityHealthWorkers",
+  "status": "active",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "philip@alliedworld.heatlhcare"
+        }
+      ],
+      "name": "Philip Sales"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "23278007",
+            "display": "Community health physician"
+          },
+          {
+            "code": "224540001",
+            "display": "Community nurse"
+          },
+          {
+            "code": "60008001",
+            "display": "Public health nutritionist"
+          }
+        ],
+        "version": "http://snomed.info/sct/32506021000036107/version/20160630"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CommunityHealthWorkers</h2><tt>https://example.org/fhir/ValueSet/awh-healthworker-stu3</tt><p>Health Worker Valueset for Philippines</p></div>"
+  },
+  "id": "awh-healthworker-stu3",
+  "date": "2018-06-25",
+  "publisher": "Allied World Healthcare Venturs: Innovation Labs",
+  "experimental": false,
+  "description": "Health Worker Valueset for Philippines",
+  "copyright": "Creative Commons"
+}

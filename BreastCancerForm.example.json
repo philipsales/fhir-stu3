@@ -1,0 +1,20 @@
+{
+  "resourceType": "BreastCancerForm",
+  "id": "cf-1529394619323",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'><a name='mm'/></div>"
+  },
+  "meta": {
+    "profile": [
+      "http://fhirtest.uhn.ca/baseDstu3/StructureDefinition/BreastCancerForm"
+    ]
+  },
+  "implicitRules": "isLogicalModel",
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/baseTypeForModel",
+      "valueString": "Composition"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "url": "https://example.org/fhir/ValueSet/awh-maritalstatus-stu3",
+  "identifier": [
+    {
+      "value": "2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1",
+      "system": "http://art-decor.org/ns/oids/v"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "MaritalStatus.ValueSet",
+  "status": "active",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://alliedworld.healthcare"
+        }
+      ],
+      "name": "AWH Ventures: Health Innovation Labs"
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "jim@alliedworld.heatlhcare"
+        }
+      ],
+      "name": "Jim Poole"
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "philip@alliedworld.healthcare"
+        }
+      ],
+      "name": "Philip Sales"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "D",
+            "display": "Diborxo"
+          },
+          {
+            "code": "Kb",
+            "display": "Maraming Kabit"
+          }
+        ],
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/v3-MaritalStatus",
+          "http://hl7.org/fhir/ValueSet/marital-status"
+        ],
+        "system": "http://hl7.org/fhir/v3/MaritalStatus"
+      }
+    ]
+  },
+  "description": "Relationship Status for Philippines",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MaritalStatus.ValueSet</h2><tt>https://example.org/fhir/ValueSet/awh-maritalstatus-stu3</tt><p>Relationship Status for Philippines</p></div>"
+  },
+  "publisher": "Allied World Healthcare Venturs: Innovation Labs",
+  "date": "2018-06-26",
+  "copyright": "Creative Commons, no rights reserved",
+  "experimental": true,
+  "id": "awh-maritalstatus-stu3"
+}

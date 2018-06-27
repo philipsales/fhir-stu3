@@ -1,0 +1,20 @@
+{
+  "resourceType": "Observation",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observation<a name='mm'/></div>"
+  },
+  "id": "cf-1529389040143",
+  "subject": {
+    "reference": "Patient/4313964"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "272679001",
+        "system": "http://snomed.info/sct",
+        "display": "Bone structure of head"
+      }
+    ]
+  }
+}
