@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "QuestionnaireAWH",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-06-27T03:59:31.071+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/cfAuthor",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://fhirtest.uhn.ca/baseDstu3/Questionnaire/QuestionnaireAWH",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "id0",
+      "text": "Root",
+      "item": [
+        {
+          "linkId": "id1",
+          "text": "Text",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
