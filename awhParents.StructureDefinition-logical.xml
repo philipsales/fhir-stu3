@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/AWHPersonModel" />
+  <name value="AWHPersonModel" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="logical" />
+  <abstract value="true" />
+  <type value="Model" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="Model">
+      <path value="Model" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="Model.identifier">
+      <path value="Model.identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="uuid" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/uuid" />
+      </type>
+    </element>
+    <element id="Model.name">
+      <path value="Model.name" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Model.parents">
+      <path value="Model.parents" />
+      <label value="parents" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Person" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+    <element id="Model.organization">
+      <path value="Model.organization" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/Organization" />
+        <aggregation value="bundled" />
+        <aggregation value="referenced" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>

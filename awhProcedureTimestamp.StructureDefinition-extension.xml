@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/ProcedureTimestampAWH" />
+  <version value="0.0.1" />
+  <name value="procedure-timestamp-awh" />
+  <title value="procedure-timestamp-awh" />
+  <status value="draft" />
+  <date value="2018-06-23" />
+  <publisher value="Allied World Healthcare: Ventures Lab" />
+  <purpose value="Timestamp for Procedure" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Procedure" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <base>
+        <path value="Element" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:StartDate">
+      <path value="Extension.extension" />
+      <sliceName value="StartDate" />
+    </element>
+    <element id="Extension.extension:StartDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="StartDate" />
+    </element>
+    <element id="Extension.extension:StartDate.value[x]:valueDateTime">
+      <path value="Extension.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:Comment">
+      <path value="Extension.extension" />
+      <sliceName value="Comment" />
+    </element>
+    <element id="Extension.extension:Comment.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Comment" />
+    </element>
+    <element id="Extension.extension:Comment.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/ProcedureTimestampAWH" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
