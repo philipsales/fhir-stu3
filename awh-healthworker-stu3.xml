@@ -1,0 +1,52 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="awh-healthworker-stu3" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>CommunityHealthWorkers</h2>
+      <tt>https://example.org/fhir/ValueSet/awh-healthworker-stu3</tt>
+      <p>Health Worker Valueset for Philippines</p>
+    </div>
+  </text>
+  <url value="https://example.org/fhir/ValueSet/awh-healthworker-stu3" />
+  <identifier>
+    <system value="http://snomed.info/sct/32506021000036107/version/20160630" />
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.7.9.9" />
+  </identifier>
+  <version value="0.0.1" />
+  <name value="CommunityHealthWorkers" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2018-06-25" />
+  <publisher value="Allied World Healthcare Venturs: Innovation Labs" />
+  <contact>
+    <name value="Philip Sales" />
+    <telecom>
+      <system value="email" />
+      <value value="philip@alliedworld.heatlhcare" />
+    </telecom>
+  </contact>
+  <description value="Health Worker Valueset for Philippines" />
+  <copyright value="Creative Commons" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/32506021000036107/version/20160630" />
+      <concept>
+        <code value="23278007" />
+        <display value="Community health physician" />
+      </concept>
+      <concept>
+        <code value="224540001" />
+        <display value="Community nurse" />
+      </concept>
+      <concept>
+        <code value="60008001" />
+        <display value="Public health nutritionist" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/MyQuestionnaire" />
+  <version value="v.0.2.0" />
+  <name value="Questionnaire" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Questionnaire" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Questionnaire.publisher">
+      <path value="Questionnaire.publisher" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.description">
+      <path value="Questionnaire.description" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.copyright">
+      <path value="Questionnaire.copyright" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="http://google.com" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.copyright:copyrightYear">
+      <path value="Questionnaire.copyright" />
+      <sliceName value="copyrightYear" />
+    </element>
+    <element id="Questionnaire.copyright:yearEnd">
+      <path value="Questionnaire.copyright" />
+      <sliceName value="yearEnd" />
+    </element>
+  </differential>
+</StructureDefinition>
